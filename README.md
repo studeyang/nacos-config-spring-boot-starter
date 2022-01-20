@@ -25,11 +25,11 @@ test1:
 
 And I set `-Dspring.profiles.active=alpha` and get property named `test1.config`, `nacos-spring-boot` gave me the result `beta`.
 
-## what I expected
+## Expected
 
-I expect  the result is `alpha`.
+`alpha`
 
-See: https://github.com/nacos-group/nacos-spring-boot-project/issues/226
+> See: https://github.com/nacos-group/nacos-spring-boot-project/issues/226
 
 # Usage
 
