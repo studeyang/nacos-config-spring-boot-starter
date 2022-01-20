@@ -23,7 +23,7 @@ test1:
   config: beta
 ```
 
-And I set `active profiles=alpha` and get property named `test1.config`, `nacos-spring-boot` gave me the result `beta`.
+And I set `-Dspring.profiles.active=alpha` and get property named `test1.config`, `nacos-spring-boot` gave me the result `beta`.
 
 ## what I expected
 
