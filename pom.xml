@@ -3,15 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.casstime.open</groupId>
-    <artifactId>cass-config-spring-boot-starter</artifactId>
+    <groupId>com.dbses.open</groupId>
+    <artifactId>nacos-config-spring-boot-starter</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.casstime</groupId>
-        <artifactId>cass-parent</artifactId>
-        <version>1.0.0.RELEASE</version>
-        <relativePath />
+        <groupId>com.alibaba.boot</groupId>
+        <artifactId>nacos-spring-boot-parent</artifactId>
+        <version>0.1.8</version>
     </parent>
 
     <properties>
@@ -27,34 +26,25 @@
             <artifactId>spring-boot-starter</artifactId>
             <version>${spring-booot.version}</version>
         </dependency>
+
+        <!--nacos-->
         <dependency>
             <groupId>com.alibaba.nacos</groupId>
             <artifactId>nacos-spring-context</artifactId>
             <version>1.1.0</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>nacos-config-spring-boot-autoconfigure</artifactId>
             <version>0.1.8</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>nacos-spring-boot-base</artifactId>
             <version>0.1.8</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>cass-public</id>
-            <name>Cass Public</name>
-            <url>http://dev.casstime.com/nexus/content/groups/public/</url>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-    </repositories>
 
     <build>
         <finalName>${artifactId}</finalName>

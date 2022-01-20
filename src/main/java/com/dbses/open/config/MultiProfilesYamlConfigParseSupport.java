@@ -1,4 +1,4 @@
-package com.casstime.open.cassconfig;
+package com.dbses.open.config;
 
 import com.alibaba.nacos.spring.util.parse.DefaultYamlConfigParse;
 import org.springframework.boot.SpringApplication;
