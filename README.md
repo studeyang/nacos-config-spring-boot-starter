@@ -30,3 +30,17 @@ And I set `active profiles=alpha` and get property named `test1.config`, `nacos-
 I expect  the result is `alpha`.
 
 See: https://github.com/nacos-group/nacos-spring-boot-project/issues/226
+
+# Usage
+
+````java
+@PrepareConfigurations({"common_database.yml", "common_eureka.yml"})
+public class WebApplication {
+
+    public static void main(String[] args) {
+        ConfigurableApplicationContext context = SpringApplication.run(WebApplication.class, args);
+        context.getEnvironment();
+    }
+
+}
+````
