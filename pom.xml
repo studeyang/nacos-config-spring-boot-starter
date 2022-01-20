@@ -27,6 +27,11 @@
             <version>${spring-booot.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
         <!--nacos-->
         <dependency>
             <groupId>com.alibaba.nacos</groupId>
